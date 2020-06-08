@@ -12,12 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (BuildContext context) => SplashScreen(),
+        '/addreminders': (BuildContext context) => SplashScreen(),
         '/home': (BuildContext context) => HomeScreen(),
         '/drugsdescription': (BuildContext context) => DrugsDescriptionScreen(),
-        '/addreminders': (BuildContext context) => RemindersScreen(),
+        '/': (BuildContext context) => RemindersScreen(),
       },
       title: 'Medications Reminder',
       );
